@@ -1,13 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import TopBar from '../components/TopBar'
+import TopBar from '../components/TopBar';
 
 function Home() {
-  return (
-    <>
-        <TopBar />
-    </>
-  )
+  return <TopBar />;
 }
 
-export default Home
+export default Home;

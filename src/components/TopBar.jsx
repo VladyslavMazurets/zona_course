@@ -1,13 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function TopBar() {
-  return (
-    <>
-        <div className='w-full h-14 bg-black'>
-
-        </div>
-    </>
-  )
+  return <div className="w-full h-14 bg-black" />;
 }
 
-export default TopBar
+export default TopBar;
