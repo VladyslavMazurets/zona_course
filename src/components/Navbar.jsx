@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import TopBar from './TopBar';
+import Registration from './Registration';
 
-const NavBtn = 'transition delay-100 hover:text-orange-600';
+const NavBtn = 'transition delay-100 hover:text-orange-400';
 
 function Navbar() {
+  const [buttonClick, setButtonClick] = useState(false);
+
   return (
-    <>
+    <div className="relative z-0">
       <TopBar />
-      <div className="sticky top-0 flex items-center w-full h-28 bg-gray-200 px-8">
-        <div className="flex justify-between w-full text-black text-xl font-medium">
+      <div className="sticky top-0 flex items-center w-full h-[90px] bg-zinc-500 px-8">
+        <div className="flex justify-between w-full text-white text-xl font-medium font-oswald">
           <div>
-            <button type="button" className={NavBtn}>
+            <button
+              type="button"
+              className={NavBtn}
+              onClick={() => setButtonClick((prevState) => !prevState)}
+            >
               Записатися на пробне заняття
             </button>
           </div>
 
-          <div className="absolute left-[46%] top-[35%] text-3xl">
+          <div className="absolute left-[46%] top-[30%] text-3xl">
             Zona Course
           </div>
 
@@ -40,7 +47,8 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </>
+      {buttonClick && <Registration />}
+    </div>
   );
 }
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <p className="h-screen">
+      <p className="h-screen bg-black text-white">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ad odit
         deleniti consectetur amet quod magni omnis possimus aperiam sint fuga,
         illum consequatur, eius cupiditate.
