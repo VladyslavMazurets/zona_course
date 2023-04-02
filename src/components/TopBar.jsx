@@ -11,7 +11,7 @@ import {
 
 const IconsTel = 'mr-2';
 const TelBtn = 'flex items-center transition delay-100 hover:text-orange-600';
-const SocialBtn = 'transition delay-100 hover:text-orange-600';
+const SocialBtn = 'transition delay-100 ease-linear hover:text-orange-600';
 
 function TopBar() {
   return (

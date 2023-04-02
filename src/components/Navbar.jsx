@@ -4,16 +4,22 @@ import { Link } from 'react-router-dom';
 import TopBar from './TopBar';
 import Registration from './Registration';
 
-const NavBtn = 'transition delay-100 hover:text-orange-400';
+const NavBtn = 'transition delay-100 ease-linear hover:text-orange-400';
 
 function Navbar() {
   const [buttonClick, setButtonClick] = useState(false);
 
   return (
-    <div className="relative z-0">
+    <>
       <TopBar />
-      <div className="sticky top-0 flex items-center w-full h-[90px] bg-zinc-500 px-8">
-        <div className="flex justify-between w-full text-white text-xl font-medium font-oswald">
+      <div
+        className="sticky top-0 flex items-center w-full h-[90px] 
+      bg-zinc-500 px-8"
+      >
+        <div
+          className="flex justify-between w-full text-white text-xl 
+          font-medium	font-oswald"
+        >
           <div>
             <button
               type="button"
@@ -47,8 +53,8 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {buttonClick && <Registration />}
-    </div>
+      {buttonClick && <Registration setButtonClick={setButtonClick} />}
+    </>
   );
 }
 

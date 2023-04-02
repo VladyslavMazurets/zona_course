@@ -19,6 +19,7 @@
         "react"
     ],
     "rules": {
+        "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "prettier/prettier": ["error"],
@@ -26,7 +27,7 @@
         "no-console": 1,
         "quotes": [ 2, "single" ],
         "jsx-quotes": [ 2, "prefer-double"],
-        "max-len": [ 1, {"code": 120}],
+        "max-len": [ 2, {"code": 80}],
         "import/order": [ 2,
         {
                 "groups": [
