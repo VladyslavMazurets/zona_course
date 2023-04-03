@@ -24,7 +24,7 @@ function Registration({ setButtonClick }) {
         className="fixed top-0 left-0 w-full h-full bg-zinc-500 z-30 
         flex flex-col items-center justify-center xl:rounded-2xl"
       >
-        <div className="flex flex-col h-full py-8 px-4 xl:p-6">
+        <div className="flex flex-col py-8 px-4 xl:p-6">
           <div className="flex relative">
             <div className="flex flex-col text-center">
               <span
