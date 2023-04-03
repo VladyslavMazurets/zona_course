@@ -15,9 +15,15 @@ const SocialBtn = 'transition delay-100 ease-linear hover:text-orange-600';
 
 function TopBar() {
   return (
-    <div className="w-full h-14 bg-black">
-      <div className="flex justify-between text-white items-center p-4">
-        <div className="flex justify-around text-2xl w-1/6">
+    <div className="w-full h-max bg-black">
+      <div
+        className="flex flex-col justify-between text-white items-center 
+      p-4 sm:flex-row"
+      >
+        <div
+          className="flex justify-around text-2xl w-full 
+        sm:w-1/4 2xl:w-1/6"
+        >
           <button
             className={SocialBtn}
             type="button"
@@ -61,7 +67,10 @@ function TopBar() {
           </button>
         </div>
 
-        <div className="flex justify-around w-1/3">
+        <div
+          className="flex flex-col items-center justify-around w-full mt-4
+       sm:m-0 sm:flex-row sm:w-[70%] lg:w-[55%] 2xl:w-1/3"
+        >
           <a href="tel:+380978975064" className={TelBtn}>
             <FaMobileAlt className={IconsTel} /> +380 97 897 50 64
           </a>

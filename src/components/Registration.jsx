@@ -1,10 +1,14 @@
 import React from 'react';
+import { RxCross2 } from 'react-icons/rx';
 
 import useClickOutside from '../hooks/useClickOutside';
 
-const Label = 'flex flex-col w-full';
-const Title = 'text-2xl font-oswald text-white';
-const Input = 'text-lg p-2 mt-2 rounded-lg';
+const Label = 'flex flex-col w-full mb-4';
+const Title = 'text-xl font-oswald text-orange-500 xl:text-2xl';
+const Input =
+  // eslint-disable-next-line max-len
+  'text-sm p-1.5 mt-2 rounded-lg border-2 border-white focus:outline-none ' +
+  'focus:border-orange-600 xl:border-4 xl:text-lg';
 
 function Registration({ setButtonClick }) {
   const domNode = useClickOutside(() => setButtonClick(false));
@@ -17,17 +21,36 @@ function Registration({ setButtonClick }) {
         opacity-50 hidden sm:block"
       />
       <div
-        className="fixed top-[22%] left-[40%] w-1/4 bg-zinc-500 z-30 
-      rounded-lg"
+        className="fixed top-0 left-0 w-full h-full bg-zinc-500 z-30 
+        flex flex-col items-center justify-center xl:rounded-2xl"
       >
-        <div className=" flex flex-col items-center w-full h-full p-6">
-          <p className="text-3xl text-white font-oswald ">
-            Реєстраія на пробне заняття
-          </p>
+        <div className="flex flex-col h-full py-8 px-4 xl:p-6">
+          <div className="flex relative">
+            <div className="flex flex-col text-center">
+              <span
+                className="text-2xl text-orange-500 font-oswald 
+              xl:text-3xl"
+              >
+                Реєстрація на пробне заняття
+              </span>
+              <p className="text-sm text-white font-droid mt-3 xl:text-lg">
+                Залишіть заявку і наш менеджер звяжеться з вами найближчим часом
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setButtonClick(false)}
+              className="absolute right-[-4.5%] top-[-35%] text-2xl text-white 
+              transition delay-100 ease-linear hover:text-orange-500 
+              xl:text-3xl"
+            >
+              <RxCross2 />
+            </button>
+          </div>
+
           <form
             onSubmit=""
-            className="flex flex-col h-[425px] w-full justify-between 
-          items-start pt-8 pb-6"
+            className="flex flex-col h-full w-full items-center pt-4 pb-6"
           >
             <label htmlFor="name" className={Label}>
               <p className={Title}>Ваше імя</p>
@@ -64,9 +87,9 @@ function Registration({ setButtonClick }) {
 
             <button
               type="submit"
-              className="transition delay-100 ease-linear p-3 rounded-lg 
-              bg-white text-lg font-semibold mt-2
-              hover:text-white hover:bg-orange-500"
+              className="transition delay-100 ease-linear py-2 px-6 w-full 
+              rounded-lg bg-white text-lg font-semibold font-droid mt-12
+              hover:text-white hover:bg-orange-500 xl:w-1/2"
             >
               Записатися зараз
             </button>
