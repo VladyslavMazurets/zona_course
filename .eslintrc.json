@@ -19,6 +19,7 @@
         "react"
     ],
     "rules": {
+        "jsx-a11y/media-has-caption": 0,
         "import/prefer-default-export": 0,
         "react/prop-types": 0,
         "react/react-in-jsx-scope": 0,

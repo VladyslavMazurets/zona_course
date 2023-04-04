@@ -6,7 +6,11 @@ module.exports = {
       oswald: 'Oswald, sans-serif',
       droid: 'Droid Sans, Helvetica, Arial, sans-serif',
     },
-    extend: {},
+    extend: {
+      colors: {
+        gold: '#dec35f',
+      },
+    },
   },
   plugins: [],
 };
