@@ -18,7 +18,7 @@ function Navbar() {
       <TopBar />
       <nav
         className="sticky top-0 flex items-center w-full h-[90px] 
-      bg-zinc-700 p-4 2xl:px-8"
+      bg-zinc-700 p-4 2xl:px-8 z-100"
       >
         <div
           className="flex justify-center items-center w-full text-white 

@@ -1,10 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { coursesData } from '../../assets/constData/coursesData';
 
 function Courses() {
   return (
-    <div className="flex flex-col items-center bg-black">
-      <span className="text-gold"> Наші курси: </span>
-      <div>hello</div>
+    <div className="flex text-center bg-black">
+      <div className="flex flex-col items-center my-12">
+        <span className="text-5xl text-gold font-oswald"> Наші курси </span>
+        <div className="grid grid-cols-4 flex-wrap w-[100%]">
+          {coursesData.map((item) => (
+            <Link key={item.id} to={item.link}>
+              <img
+                src={item.img}
+                alt="Courses_img"
+                className="w-[250px] h-[250px] border-4 rounded-full"
+              />
+              <span className="text-gold">{item.title}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

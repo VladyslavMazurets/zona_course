@@ -4,7 +4,10 @@ import video from '../../assets/video/meal.mp4';
 
 function Intro() {
   return (
-    <div className="flex flex-col items-center w-full h-max bg-black">
+    <div
+      className="relative z-[-100] flex flex-col items-center w-full h-max 
+    bg-black"
+    >
       <div className="w-full h-[780px]">
         <video
           src={video}
@@ -37,7 +40,7 @@ function Intro() {
         </span>
       </div>
 
-      <div className="w-[95%] h-[1.5px] bg-white" />
+      <div className="w-[95%] h-[1.5px] bg-zinc-600" />
     </div>
   );
 }
