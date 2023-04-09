@@ -5,22 +5,45 @@ import { coursesData } from '../../assets/constData/coursesData';
 
 function Courses() {
   return (
-    <div className="flex text-center justify-center bg-black">
-      <div className="flex flex-col  justify-center my-12">
-        <span className="text-5xl text-gold font-oswald"> Наші курси </span>
-        <div className="grid gap-x-24 grid-cols-4 flex-wrap w-[100%]">
+    <div
+      className="flex flex-col text-center items-center justify-center 
+    bg-black"
+    >
+      <div className="flex flex-col justify-center items-center my-8">
+        <span
+          className="text-4xl text-gold font-raleway font-bold mb-12 md:text-5xl
+        md:mb-16 xl:text-6xl xl:mb-20"
+        >
+          Наші курси
+        </span>
+        <div
+          className="grid gap-y-5 mb-4 md:grid-cols-2 md:gap-y-6 
+          xl:grid-cols-4 xl:gap-y-5"
+        >
           {coursesData.map((item) => (
-            <Link key={item.id} to={item.link}>
+            <Link
+              key={item.id}
+              to={item.link}
+              className="flex flex-col items-center justify-center px-1 md:p-0"
+            >
               <img
                 src={item.img}
                 alt="Courses_img"
-                className="w-[250px] h-[250px] border-4 rounded-full"
+                className="w-[200px] h-[200px] border-4 rounded-full
+                object-cover border-yellow-100 hover:border-gold md:w-[230px] 
+                md:h-[230px] lg:w-[250px] lg:h-[250px]"
               />
-              <span className="text-gold">{item.title}</span>
+              <span
+                className="text-gold text-xl font-raleway font-droid
+              font-semibold mt-3 hover:text-yellow-300 md:w-[75%] lg:text-2xl"
+              >
+                {item.title}
+              </span>
             </Link>
           ))}
         </div>
       </div>
+      <div className="w-[95%] h-[1.5px] bg-zinc-600" />
     </div>
   );
 }
