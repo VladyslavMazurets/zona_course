@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 
 import { navLinkData } from '../../assets/constData/navLink';
 import logo from '../../assets/photo/logo.png';
+import { useClickClose } from '../../hooks/useClickCLose';
 
-// eslint-disable-next-line max-len
 const NavBtn = 'mb-6 transition delay-100 ease-linear hover:text-gold md:mb-12';
 
-function NavbarSmall({ buttonClick, setButtonClick }) {
+function NavbarSmall({ setButtonClick }) {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [close, clickClose] = useClickClose(() => setToggleMenu(false), 800);
+
+  const moveHome = !close
+    ? 'animate-movehomeactive'
+    : 'animate-movehomepassive';
 
   return (
     <div className="block xl:hidden">
@@ -21,8 +26,9 @@ function NavbarSmall({ buttonClick, setButtonClick }) {
 
       {toggleMenu && (
         <div
-          className="fixed top-0 left-0 w-full h-full transition delay-100
-             ease-linear flex flex-col items-center justify-center bg-zinc-700"
+          className={`fixed top-0 left-0 w-full h-full flex flex-col 
+            items-center justify-center 
+            ${moveHome} bg-zinc-700`}
         >
           <div className="w-full text-white">
             <div
@@ -32,7 +38,7 @@ function NavbarSmall({ buttonClick, setButtonClick }) {
               <img src={logo} alt="Inout_logo" />
             </div>
             <RxCross2
-              onClick={() => setToggleMenu(false)}
+              onClick={clickClose}
               className="absolute top-5 right-[-5%] mr-8 transition delay-100 
               ease-linear text-2xl hover:text-gold md:text-3xl md:right-[-2%]"
             />
@@ -46,7 +52,7 @@ function NavbarSmall({ buttonClick, setButtonClick }) {
               <Link
                 key={item.id}
                 to="/"
-                onClick={() => setToggleMenu(false)}
+                onClick={clickClose}
                 className={NavBtn}
               >
                 {item.title}

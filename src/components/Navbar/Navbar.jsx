@@ -22,7 +22,7 @@ function Navbar() {
       >
         <div
           className="flex justify-center items-center w-full text-white 
-          text-xl font-medium	font-oswald xl:justify-between"
+          text-xl font-semibold	font-raleway xl:justify-between"
         >
           <div>
             <button
