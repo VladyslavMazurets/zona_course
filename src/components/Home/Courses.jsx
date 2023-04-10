@@ -34,8 +34,8 @@ function Courses() {
                 md:h-[230px] lg:w-[250px] lg:h-[250px]"
               />
               <span
-                className="text-gold text-xl font-raleway font-droid
-              font-semibold mt-3 hover:text-yellow-300 md:w-[75%] lg:text-2xl"
+                className="text-white text-xl font-raleway font-droid
+              font-semibold mt-3 hover:text-gold md:w-[75%] lg:text-2xl"
               >
                 {item.title}
               </span>

@@ -23,7 +23,7 @@ function Intro() {
         className="text-center px-2 py-12 lg:w-4/5 xl:w-[90%] 2xl:w-3/5 
       2xl:py-16"
       >
-        <span className="text-xl text-gold font-droid">
+        <span className="text-xl text-white font-droid">
           &ldquo; INOUT &ldquo; - це акторська школа, яка пропонує якісну освіту
           з акторської майстерності та театральної практики. <br />
           Ми працюємо з талановитими та амбітними людьми, які хочуть розвивати
