@@ -8,7 +8,9 @@ import TopBar from './TopBar';
 import Registration from './Registration';
 import NavbarSmall from './NavbarSmall';
 
-const NavBtn = 'transition delay-100 ease-linear hover:text-gold';
+const NavBtn =
+  'transition delay-100 ease-linear font-raleway' +
+  'font-semibold hover:text-gold';
 
 function Navbar() {
   const [buttonClick, setButtonClick] = useState(false);
@@ -22,7 +24,7 @@ function Navbar() {
       >
         <div
           className="flex justify-center items-center w-full text-white 
-          text-xl font-semibold	font-raleway xl:justify-between"
+          text-xl xl:justify-between"
         >
           <div>
             <button
