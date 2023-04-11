@@ -5,7 +5,7 @@ import video from '../../assets/video/meal.mp4';
 function Intro() {
   return (
     <div
-      className="relative z-[-100] flex flex-col items-center w-full h-max 
+      className="relative z-0 flex flex-col items-center w-full h-max 
     bg-black"
     >
       <div className="w-full h-[780px]">

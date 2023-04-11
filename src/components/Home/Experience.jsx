@@ -28,7 +28,7 @@ function Experience() {
               <div
                 key={item.id}
                 className="h-full w-auto flex flex-col mb-6
-               xl:relative xl:m-0"
+                xl:m-0 xl:relative xl:z-0"
               >
                 <CountUp
                   start={0}
@@ -38,7 +38,7 @@ function Experience() {
                   xl:bottom-[46%]"
                 />
                 <span
-                  className="text-white text-xl font-droid xl:ml-[120px]
+                  className="text-white text-xl font-droid xl:ml-[120px] xl:z-0
                 2xl:text-2xl 2xl:ml-32"
                 >
                   {item.title}
@@ -62,7 +62,7 @@ function Experience() {
               // eslint-disable-next-line max-len
               src="https://www.youtube.com/embed/cmedy35qst0?autoplay=0&showinfo=0&controls=0&autohide=1"
               title="YouTube video player"
-              allowfullscreen
+              allowFullScreen
             />
           </div>
         </div>
