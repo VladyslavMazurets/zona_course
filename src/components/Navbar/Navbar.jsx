@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { navLinkData } from '../../assets/constData/navLink';
-import logo from '../../assets/photo/logo.png';
+import logo from '../../assets/images/logo.png';
 
 import TopBar from './TopBar';
 import Registration from './Registration';
@@ -50,7 +50,7 @@ function Navbar() {
             xl:flex 2xl:w-1/4"
           >
             {navLinkData?.map((item) => (
-              <Link key={item.id} to="/" className={NavBtn}>
+              <Link key={item.id} to={item.link} className={NavBtn}>
                 {item.title}
               </Link>
             ))}

@@ -1,4 +1,4 @@
-import img from '../photo/course.jpg';
+import img from '../images/course.jpg';
 
 export const coursesData = [
   {

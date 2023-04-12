@@ -3,7 +3,7 @@ import { RxHamburgerMenu, RxCross2 } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 
 import { navLinkData } from '../../assets/constData/navLink';
-import logo from '../../assets/photo/logo.png';
+import logo from '../../assets/images/logo.png';
 import { useClickClose } from '../../hooks/useClickCLose';
 
 const NavBtn = 'mb-6 transition delay-100 ease-linear hover:text-gold md:mb-12';
@@ -51,7 +51,7 @@ function NavbarSmall({ setButtonClick }) {
             {navLinkData?.map((item) => (
               <Link
                 key={item.id}
-                to="/"
+                to={item.link}
                 onClick={clickClose}
                 className={NavBtn}
               >

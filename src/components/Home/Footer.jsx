@@ -4,7 +4,7 @@ import { FiMail } from 'react-icons/fi';
 import { FaMobileAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/photo/logo.png';
+import logo from '../../assets/images/logo.png';
 import { navLinkData } from '../../assets/constData/navLink';
 
 const footerTitle = `text-gold text-2xl font-raleway font-bold mb-4 pb-2 
