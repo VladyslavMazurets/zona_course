@@ -9,7 +9,7 @@ import { navLinkData } from '../../assets/constData/navLink';
 
 const footerTitle = 'text-gold text-2xl font-raleway font-bold mb-4';
 const footerIcon = 'text-xl text-gold mr-6';
-const footerAdress = 'flex items-center mb-4';
+const footerAdress = 'flex items-center';
 const footerAdressText = 'text-lg font-droid text-white hover:text-gold';
 
 function Footer() {
@@ -24,10 +24,10 @@ function Footer() {
             bottom-[25%]"
           />
 
-          <span className="text-2xl text-gold mt-20">
+          <span className="text-2xl text-gold font-droid mt-28 leading-9">
             <strong className="text-white text-4xl">&ldquo;</strong>
             Стань героєм своєї історії та розкрий свій потенціал усередині себе
-            з нашою професійною підтримкою
+            з нашою професійною підтримкою.
             <strong className="text-white text-4xl leading-3">&ldquo;</strong>
           </span>
         </div>
@@ -81,19 +81,37 @@ function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col">
+        <div
+          className="h-full flex flex-col items-center justify-between 
+        w-[18%]"
+        >
           <span className={footerTitle}>Зв&lsquo;яжіться з нами</span>
 
-          <span>text</span>
+          <span
+            className="text-xl text-center text-white font-droid 
+          leading-7"
+          >
+            Відкрий свій потенціал та стань актором власного туатру! <br />
+            Зв&lsquo;яжись з нами для деталей.
+          </span>
 
-          <Link to="/"> 2 </Link>
+          <Link
+            to="/"
+            className="w-[50%] text-xl text-black text-center font-semibold
+            font-droid tracking-[.09em] rounded-[5px] px-8 py-1 bg-gold
+            border-[2px] border-transparent transition duration-300 ease-linear	
+            hover:bg-black hover:text-gold 
+            hover:border-gold"
+          >
+            Творіть
+          </Link>
         </div>
       </div>
 
       <div className="w-[95%] h-[2px] bg-zinc-600" />
 
       <div
-        className="w-[90%] flex justify-between py-4 text-lg font-raleway
+        className="w-[90%] flex justify-between py-8 text-lg font-raleway
       text-white"
       >
         <span>© 2023 All rights reserved</span>
