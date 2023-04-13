@@ -2,14 +2,14 @@ import React from 'react';
 import { GoDeviceMobile } from 'react-icons/go';
 
 const numberStyle = `text-2xl font-raleway font-bold mt-2 xl:mt-3 md:text-4xl
-lg:text-2xl`;
+lg:text-2xl xl:text-3xl 2xl:text-4xl`;
 const inputTitleStyle = `flex flex-col text-xl text-gold font-droid mt-5 mb-1
-md:text-2xl md:mt-4 lg:text-xl lg:mt-3`;
+md:text-2xl md:mt-4 lg:text-xl lg:mt-3 2xl:text-2xl`;
 const inputStyle = `text-lg text-black py-1 px-3 w-full rounded-[5px] 
 border-4 border-transparent focus:outline-none focus:border-gold md:text-xl
-lg:text-lg`;
+lg:text-lg 2xl:text-xl`;
 const titleStyle = `text-3xl text-gold font-raleway font-semibold mb-5
-border-b-2 border-gold pb-6 md:mb-8 md:text-5xl lg:text-4xl`;
+border-b-2 border-gold pb-6 md:mb-8 md:text-5xl lg:text-4xl 2xl:text-5xl`;
 
 function ContactUs() {
   return (
@@ -19,13 +19,13 @@ function ContactUs() {
     >
       <div
         className="flex flex-col justify-between items-center py-8 w-[85%]
-      lg:flex-row lg:w-[95%]"
+      lg:flex-row lg:w-[95%] 2xl:w-[85%]"
       >
         <div
           className="bg-[url('/src/assets/images/contact_bg.jpg')] bg-center
           bg-no-repeat bg-cover h-[430px] w-[280px] flex items-center 
           justify-center relative md:h-[350px] md:w-[700px] lg:w-[250px] 
-          lg:h-[700px] xl:h-[775px] xl:w-[350px]"
+          lg:h-[700px] xl:w-[300px] 2xl:h-[775px] 2xl:w-[350px]"
         >
           <div className="absolute z-0 h-full w-full bg-black opacity-20" />
 
@@ -33,10 +33,13 @@ function ContactUs() {
             className="absolute z-10 text-white flex flex-col text-center
            items-center"
           >
-            <GoDeviceMobile className="text-5xl mb-6 md:text-7xl lg:text-6xl" />
+            <GoDeviceMobile
+              className="text-5xl mb-6 md:text-7xl lg:text-6xl
+            xl:text-7xl"
+            />
             <span
               className="text-xl font-raleway font-semibold leading-10 
-            md:mb-3 md:text-2xl lg:text-xl"
+            md:mb-3 md:text-2xl lg:text-xl xl:text-2xl"
             >
               Виникли запитання? <br /> Телефонуйте нам!
             </span>
@@ -47,17 +50,17 @@ function ContactUs() {
 
         <div
           className="flex flex-col items-center mt-12 lg:m-0 lg:w-[35%]
-        lg:items-start"
+        lg:items-start 2xl:w-auto"
         >
           <span className={`${titleStyle} w-max`}>Адреса</span>
 
           <div
             className="flex flex-col items-center text-center lg:mt-8
-            lg:text-start lg:items-start"
+            lg:text-start lg:items-start xl:m-0"
           >
             <span
               className="text-xl font-droid text-white mb-3 md:text-2xl
-            lg:text-xl"
+            lg:text-xl xl:text-2xl"
             >
               Чекаємо вас за адресою:
             </span>
@@ -67,7 +70,8 @@ function ContactUs() {
 
             <div
               className="w-[290px] h-[450px] bg-white md:w-[700px] lg:w-full
-              lg:h-[300px] lg:mb-8 xl:w-[600px] xl:h-[450px]"
+              lg:h-[300px] lg:mb-8 xl:w-full xl:h-[350px] 2xl:w-[550px] 
+              2xl:h-[380px]"
             />
           </div>
         </div>
@@ -78,14 +82,14 @@ function ContactUs() {
         >
           <span
             className={`${titleStyle} text-center w-[80%] md:w-[50%] lg:w-[85%]
-          xl:w-[68%]`}
+          xl:w-[70%] 2xl:w-[68%]`}
           >
             Надішліть нам повідомлення
           </span>
 
           <form className="flex flex-col w-full">
             <label htmlFor="name">
-              <span className={`${inputTitleStyle} xl:mt-10`}>
+              <span className={`${inputTitleStyle} 2xl:mt-10`}>
                 Ваше ім&apos;я:
               </span>
               <input
