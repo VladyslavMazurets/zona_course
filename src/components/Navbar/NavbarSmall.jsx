@@ -17,7 +17,7 @@ function NavbarSmall({ setButtonClick }) {
     : 'animate-movehomepassive';
 
   return (
-    <div className="block xl:hidden">
+    <nav className="block xl:hidden">
       <RxHamburgerMenu
         className="text-2xl absolute top-[35%] right-[5%] text-white 
         md:right-[3%]"
@@ -74,7 +74,7 @@ function NavbarSmall({ setButtonClick }) {
           </button>
         </div>
       )}
-    </div>
+    </nav>
   );
 }
 
