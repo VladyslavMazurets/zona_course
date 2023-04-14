@@ -4,13 +4,13 @@ import { RxCross2 } from 'react-icons/rx';
 import useClickOutside from '../../hooks/useClickOutside';
 import { useClickClose } from '../../hooks/useClickCLose';
 
-const Label = 'flex flex-col w-full mb-4 min-[400px]:mb-6 md:mb-3 2xl:mb-2';
+const Label = 'flex flex-col w-full mb-4 min-[390px]:mb-6 md:mb-3 2xl:mb-2';
 const Title =
   'text-xl font-relawey font-semibold text-gold mb-1 ' +
-  ' min-[400px]:text-2xl';
+  ' min-[390px]:text-2xl';
 const Input =
   'text-sm p-1.5 mt-2 rounded-lg border-2 border-white focus:outline-none ' +
-  'focus:border-gold min-[400px]:text-lg xl:border-4 md:text-xl 2xl:text-lg';
+  'focus:border-gold min-[390px]:text-lg xl:border-4 md:text-xl 2xl:text-lg';
 
 function Registration({ setButtonClick }) {
   const domNode = useClickOutside(() => setButtonClick(false));
@@ -42,13 +42,13 @@ function Registration({ setButtonClick }) {
             <div className="flex flex-col text-center">
               <span
                 className="text-2xl text-gold font-relawey font-semibold pt-8
-              min-[400px]:text-3xl md:text-4xl md:mb-3 2xl:pt-4"
+              min-[390px]:text-3xl md:text-4xl md:mb-3 2xl:pt-4"
               >
                 Реєстрація на пробне заняття
               </span>
               <p
                 className="text-sm text-white font-droid mt-3 
-                min-[400px]:text-lg md:text-2xl 2xl:text-xl 2xl:mt-1"
+                min-[390px]:text-lg md:text-2xl 2xl:text-xl 2xl:mt-1"
               >
                 Залишіть заявку і наш менеджер звяжеться з вами найближчим часом
               </p>
@@ -65,8 +65,8 @@ function Registration({ setButtonClick }) {
 
           <form
             onSubmit=""
-            className="flex flex-col items-center h-full w-[90%] mt-16 
-            md:mt-4"
+            className="flex flex-col items-center h-full w-[90%] mt-8 
+            min-[390px]:mt-16 md:mt-4"
           >
             <label htmlFor="name" className={Label}>
               <p className={Title}>Ваше імя</p>
@@ -104,9 +104,9 @@ function Registration({ setButtonClick }) {
             <button
               type="submit"
               className="transition delay-100 ease-linear py-2 px-6 w-full 
-              rounded-lg bg-white text-lg font-droid font-medium mt-12
-              hover:text-white hover:bg-gold min-[400px]:text-xl md:mt-10 
-              md:mb-5 md:w-1/2 2xl:text-xl"
+              rounded-lg bg-white text-lg font-droid font-medium mt-6
+              hover:text-white hover:bg-gold min-[390px]:mt-12 
+              min-[390px]:text-xl md:mt-10 md:mb-5 md:w-1/2 2xl:text-xl"
             >
               Записатися зараз
             </button>

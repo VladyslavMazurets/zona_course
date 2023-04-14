@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { TfiPencilAlt } from 'react-icons/tfi';
 
 import { navLinkData } from '../../assets/constData/navLink';
 import logo from '../../assets/images/logo.png';
@@ -20,7 +21,7 @@ function Navbar() {
       <TopBar />
       <nav
         className="sticky top-0 flex items-center w-full h-[90px] 
-      bg-zinc-700 p-4 2xl:px-8 z-50"
+      bg-zinc-700 p-4 2xl:px-8 z-20"
       >
         <div
           className="flex justify-center items-center w-full text-white 
@@ -62,6 +63,18 @@ function Navbar() {
           setButtonClick={setButtonClick}
         />
       </nav>
+
+      {!buttonClick && (
+        <div
+          className="fixed z-50 bottom-4 right-2 w-[50px] h-[50px] 
+      flex items-center justify-center rounded-full bg-zinc-700"
+        >
+          <TfiPencilAlt
+            onClick={() => setButtonClick(true)}
+            className="text-3xl text-white cursor-pointer"
+          />
+        </div>
+      )}
       {buttonClick && <Registration setButtonClick={setButtonClick} />}
     </>
   );
