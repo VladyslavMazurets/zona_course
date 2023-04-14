@@ -66,12 +66,13 @@ function Navbar() {
 
       {!buttonClick && (
         <div
-          className="fixed z-50 bottom-4 right-2 w-[50px] h-[50px] 
-      flex items-center justify-center rounded-full bg-zinc-700"
+          className="fixed z-50 bottom-4 right-2 w-[40px] h-[40px] block
+      flex items-center justify-center rounded-full bg-zinc-700 md:w-[45px]
+      md:h-[45px] md:right-3 xl:hidden"
         >
           <TfiPencilAlt
             onClick={() => setButtonClick(true)}
-            className="text-3xl text-white cursor-pointer"
+            className="text-2xl text-white cursor-pointer md:text-[28px]"
           />
         </div>
       )}
