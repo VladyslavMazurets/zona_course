@@ -27,6 +27,16 @@ function Navbar() {
           className="flex justify-center items-center w-full text-white 
           text-xl xl:justify-between"
         >
+          <div
+            className="hidden w-full xl:w-1/3 xl:block xl:justify-between 
+            xl:flex 2xl:w-1/4"
+          >
+            {navLinkData?.map((item) => (
+              <Link key={item.id} to={item.link} className={NavBtn}>
+                {item.title}
+              </Link>
+            ))}
+          </div>
           <div>
             <button
               type="button"
@@ -45,17 +55,6 @@ function Navbar() {
               <img src={logo} alt="Inout_Logo" />
             </Link>
           </div>
-
-          <div
-            className="hidden w-full xl:w-1/3 xl:block xl:justify-between 
-            xl:flex 2xl:w-1/4"
-          >
-            {navLinkData?.map((item) => (
-              <Link key={item.id} to={item.link} className={NavBtn}>
-                {item.title}
-              </Link>
-            ))}
-          </div>
         </div>
 
         <NavbarSmall
@@ -66,13 +65,13 @@ function Navbar() {
 
       {!buttonClick && (
         <div
-          className="fixed z-50 bottom-4 right-2 w-[40px] h-[40px] block
-      flex items-center justify-center rounded-full bg-zinc-700 md:w-[45px]
-      md:h-[45px] md:right-3 xl:hidden"
+          className="fixed z-50 bottom-6 right-0 w-[35px] h-[35px] block
+      flex items-center justify-center rounded-l-lg bg-gold md:w-[40px]
+      md:h-[40px] md:right-0 md:top-72"
         >
           <TfiPencilAlt
             onClick={() => setButtonClick(true)}
-            className="text-2xl text-white cursor-pointer md:text-[28px]"
+            className="text-2xl text-black cursor-pointer md:text-[28px]"
           />
         </div>
       )}
