@@ -7,16 +7,16 @@ function Benefit() {
     <div className="bg-black w-auto h-max">
       <div className="flex flex-col items-center py-12">
         <div
-          className="flex flex-col items-center text-center w-[85%] 
-        mb-12 xl:mb-24"
+          className="flex flex-col items-center text-center w-[95%] 
+        mb-12 lg:mb-16 xl:mb-24 xl:w-[85%]"
         >
           <span
             className="font-raleway font-bold text-2xl text-gold pb-4 
-        border-b-2 border-gold xl:text-4xl"
+        border-b-2 border-gold md:text-4xl"
           >
             Вигідні пропозиції та акції на навчання акторської майстерності
           </span>
-          <span className="font-droid text-lg text-white mt-5 xl:text-[22px]">
+          <span className="font-droid text-lg text-white mt-8 md:text-[22px]">
             Ми цінуємо кожного студента нашої школи і завжди стараємося
             запропонувати найкращі пропозиції для навчання акторської
             майстерності. Це наш спосіб висловити вам подяку та показати, що ми
@@ -35,15 +35,16 @@ function Benefit() {
                 src={item.img}
                 alt="Benefit_img"
                 className="w-[300px] h-[300px] object-cover rounded-lg 
-                xl:w-[500px] xl:h-[360px] "
+                md:w-[80%] md:h-[350px] lg:h-[400px] xl:w-[500px] xl:h-[360px] 
+                2xl:mr-16"
               />
               <div
                 className="flex flex-col items-center text-center justify-center
-               xl:w-[65%]"
+               xl:w-[45%] 2xl:w-[65%]"
               >
                 <span
                   className="font-raleway font-semibold text-2xl
-                text-gold my-7 xl:m-0 xl:mb-10 xl:text-3xl"
+                text-gold my-7 md:text-3xl xl:m-0 xl:mb-10 "
                 >
                   {item.title}
                 </span>
