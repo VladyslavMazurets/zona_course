@@ -20,8 +20,8 @@ function Navbar() {
     <>
       <TopBar />
       <nav
-        className="sticky top-0 flex items-center w-full h-[90px] 
-      bg-black p-4 2xl:px-8 z-20"
+        className="sticky top-0 flex items-center w-full h-[90px] xl:h-[100px] 
+      bg-zinc-900 p-4 2xl:px-8 z-20"
       >
         <div
           className="flex justify-center items-center w-full text-white 
@@ -48,8 +48,9 @@ function Navbar() {
           </div>
 
           <div
-            className=" xl:absolute w-[140px] h-[140px]
-            xl:left-[42%] 2xl:w-[200px] 2xl:h-[200px] 2xl:left-[45%]"
+            className=" xl:absolute w-[240px]
+            xl:left-[42%] 2xl:w-[260px] 2xl:top-[20%] 
+            2xl:left-[45%]"
           >
             <Link to="/">
               <img src={logo} alt="Inout_Logo" />
