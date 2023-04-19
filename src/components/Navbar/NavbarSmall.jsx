@@ -26,14 +26,14 @@ function NavbarSmall({ setButtonClick }) {
 
       {toggleMenu && (
         <div
-          className={`fixed top-0 left-0 w-full h-full flex flex-col 
+          className={`fixed top-0 left-0 w-full h-full z-30 flex flex-col 
             items-center justify-center 
-            ${moveHome} bg-zinc-700`}
+            ${moveHome} bg-zinc-900`}
         >
           <div className="w-full text-white">
             <div
-              className="absolute top-[-2%] left-5 w-[100px] h-[100px]
-            min-[400px]:top-[-1%] md:w-[200px] md:top-[-4%] lg:top-[-5%]"
+              className="absolute top-[5%] left-5 w-[150px]
+            min-[390px]:top-[3%] md:w-[280px] md:top-[3%] lg:top-[3%]"
             >
               <img src={logo} alt="Inout_logo" />
             </div>

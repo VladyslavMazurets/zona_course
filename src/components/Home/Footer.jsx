@@ -25,10 +25,10 @@ function Footer() {
           <img
             src={logo}
             alt="Company_logo"
-            className="w-[200px] absolute top-[50%] left-[50%] 
-            translate-x-[-50%] translate-y-[-100%] md:w-[150px] md:translate-x-0
-            md:translate-y-0 md:left-0 md:top-0 md:translate-y-[-25%] 
-            xl:w-[250px] xl:translate-y-[-30%]"
+            className="w-[250px] absolute top-[25%] left-[50%] 
+            translate-x-[-50%] translate-y-[-100%] md:w-[200px] md:translate-x-0
+            md:translate-y-0 md:left-0 md:top-5 md:translate-y-[-25%] 
+            xl:w-[300px] xl:translate-y-[-25%]"
           />
 
           <span

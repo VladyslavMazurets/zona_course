@@ -9,9 +9,8 @@ import TopBar from './TopBar';
 import Registration from './Registration';
 import NavbarSmall from './NavbarSmall';
 
-const NavBtn =
-  'transition delay-100 ease-linear font-raleway' +
-  'font-semibold hover:text-gold';
+const NavBtn = `transition delay-100 ease-linear text-[22px] font-raleway
+ hover:text-gold xl:text-xl`;
 
 function Navbar() {
   const [buttonClick, setButtonClick] = useState(false);
@@ -25,11 +24,11 @@ function Navbar() {
       >
         <div
           className="flex justify-center items-center w-full text-white 
-          text-xl xl:justify-between"
+          xl:justify-between"
         >
           <div
             className="hidden w-full xl:w-1/3 xl:block xl:justify-between 
-            xl:flex 2xl:w-1/4"
+            xl:flex 2xl:w-[28%]"
           >
             {navLinkData?.map((item) => (
               <Link key={item.id} to={item.link} className={NavBtn}>
@@ -48,9 +47,9 @@ function Navbar() {
           </div>
 
           <div
-            className=" xl:absolute w-[240px]
-            xl:left-[42%] 2xl:w-[260px] 2xl:top-[20%] 
-            2xl:left-[45%]"
+            className="w-[190px] md:w-[220px] xl:absolute 
+            xl:left-[44%] 2xl:w-[230px] 2xl:top-[20%] 
+            2xl:left-[44%]"
           >
             <Link to="/">
               <img src={logo} alt="Inout_Logo" />
@@ -66,14 +65,25 @@ function Navbar() {
 
       {!buttonClick && (
         <div
-          className="fixed z-50 bottom-6 right-0 w-[35px] h-[35px] block
-      flex items-center justify-center rounded-l-lg bg-gold md:w-[40px]
-      md:h-[40px] md:right-0 md:top-72"
+          className="fixed z-10 bottom-14 right-[-9.5%] w-max h-max rotate-90 
+          block flex items-center justify-center rounded-b-lg bg-gold 
+          transition delay-[8000ms] ease-in hover:right-[-12.5%] 
+          md:right-[-6%] md:hover:right-[-6.5%]
+          md:top-72"
         >
-          <TfiPencilAlt
+          {/* <TfiPencilAlt
             onClick={() => setButtonClick(true)}
             className="text-2xl text-black cursor-pointer md:text-[28px]"
-          />
+          /> */}
+          <span
+            className="py-1 px-2 text-sm text-zinc-900 font-droid font-bold
+            uppercase tracking-[0.1em] cursor-pointer hover:text-lg 
+            md:text-lg md:hover:text-xl
+            xl:hover:text-2xl
+            "
+          >
+            Вам Сюди
+          </span>
         </div>
       )}
       {buttonClick && <Registration setButtonClick={setButtonClick} />}

@@ -29,7 +29,7 @@ function Registration({ setButtonClick }) {
         opacity-50 hidden sm:block"
       />
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-zinc-700 z-30 
+        className={`fixed top-0 left-0 w-full h-full bg-zinc-900 z-30 
         flex flex-col ${smallClose} ${stateClose} md:w-4/5 md:h-max
          md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] 
         md:rounded-xl 2xl:rounded-2xl 2xl:w-1/3 2xl:h-max`}
